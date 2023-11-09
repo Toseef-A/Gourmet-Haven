@@ -1,0 +1,314 @@
+/*------------------------------------*\
+	Body
+\*------------------------------------*/
+
+/* Global styling for the entire webpage */
+body {
+    color: #969696;
+    font-size: 16px;
+    overflow-x: hidden;
+    font-family: 'Cabin', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Main content container, centered vertically and horizontally */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding-top: 5vh;
+}
+
+/* Hyperlink styles */
+a {
+    background-color: transparent;
+}
+
+/* Hover effect for underlining links and changing color */
+.underline-on-hover:hover {
+    text-decoration: underline;
+    color: #f36700;
+}
+
+/* Styling for white text */
+.white-text {
+    color: #FFF;
+}
+
+/* Title underline effect */
+.title:after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 2px;
+    background-color: #f36700;
+    margin: 15px 0px 30px;
+}
+
+/* Centered title underline */
+.text-center .title:after {
+    margin: 15px auto 30px;
+}
+
+/* Text selection color and background */
+p::selection {
+    color: #f36700;
+    background-color: blue;
+}
+
+h1::selection {
+    color: #f36700;
+    background-color: blue;
+}
+
+h2::selection {
+    color: #f36700;
+    background-color: blue;
+}
+
+h3::selection {
+    color: #f36700;
+    background-color: blue;
+}
+
+h4::selection {
+    color: #f36700;
+    background-color: blue;
+}
+
+a::selection {
+    color: #f36700;
+    background-color: blue;
+}
+
+li::selection {
+    color: #f36700;
+    background-color: blue;
+}
+
+/*------------------------------------*\
+    Background Images and Parallax
+\*------------------------------------*/
+
+/* Background image container */
+.bg-image {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+/* Background image with parallax scrolling effect */
+.bg-image.bg-parallax {
+    background-attachment: fixed;
+}
+
+/* Overlay effect on background images */
+.bg-image.overlay:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.7;
+    background-color: #000;
+}
+
+/*------------------------------------*\
+    Buttons
+\*------------------------------------*/
+
+/* Styling for main call-to-action buttons */
+.main-button {
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 40px;
+    background-color: #f36700;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: 0.2s opacity;
+    text-decoration: none;
+}
+
+/* Button hover effect: Change color and opacity */
+.main-button:hover {
+    color: #f36700;
+    opacity: 0.8;
+}
+
+/* Hover effect for general buttons */
+button:hover {
+    background-color: blue;
+}
+/*------------------------------------*\
+	Navigation
+\*------------------------------------*/
+
+/* Style for navigation items, adding margin between them */
+.nav-item {
+    margin: 0 1em;
+}
+
+/* Change link color on hover in the navbar */
+.navbar-nav a:hover {
+    color: #f36700;
+}
+
+/* Change background color on hover for the navbar toggle button */
+.navbar-toggler:hover {
+    background-color: #f36700;
+}
+
+/*------------------------------------*\
+	Reservation
+\*------------------------------------*/
+
+/* Styling for the map element */
+#map {
+    width: 100%;
+    height: 400px;
+    border: 0;
+}
+
+/* Reservation section styling */
+#reservation.section {
+    padding-bottom: 50px;
+    padding-left: 0px;
+    margin-left: 0%;
+}
+
+/* Background image styling for the reservation section */
+#reservation.bg-image {
+    height: 75%;
+}
+
+/* Reservation form container styles */
+.reserve-form {
+    padding: 10px;
+    background: rgba(21, 21, 21, 0.9);
+}
+
+/* Reservation form group styles */
+.reserve-form.form-group {
+    margin-bottom: 30px;
+}
+
+/* Reservation form group label styles */
+.reserve-form.form-group label {
+    color: #FFF;
+    margin-left: 10px;
+}
+
+/* Input field styles */
+.reserve-form.input {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Input field common styles */
+.input {
+    width: 100%;
+    height: 40px;
+    padding: 0px 10px;
+    border: 2px solid #ECECEC;
+    border-radius: 40px;
+    background: transparent;
+    color: white;
+}
+
+/* Select option styles */
+select > option {
+    color: #f36500;
+}
+
+/* Textarea input styles */
+textarea.input {
+    height: 160px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/* Placeholder text styles */
+::placeholder {
+    color: white;
+}
+
+/* Label styles */
+label {
+    color: white;
+}
+
+/*------------------------------------*\
+    Footer
+\*------------------------------------*/
+
+/* Footer styles */
+footer {
+    background-color: black;
+    color: white;
+    padding-left: 25px;
+}
+
+/* Footer navigation link styles */
+#footer a.nav-link {
+    color: white;
+    text-decoration-line: none;
+    padding: 0%;
+}
+
+/* Footer navigation link hover styles */
+#footer a.nav-link:hover {
+    color: #f37000;
+}
+
+/* Footer title styles */
+.footer-title {
+    color: #f36700;
+}
+
+/*------------------------------------*\
+    Responsive
+\*------------------------------------*/
+
+/* Media query for screens with a max width of 1201px */
+@media only screen and (max-width: 1201px) {
+    /* Hide the contact navigation */
+    .contact-nav {
+        display: none;
+    }
+}
+
+/* Media query for screens with a max width of 991px */
+@media only screen and (max-width: 991px) {
+    /* Display copyright text centered */
+    .copyright {
+        display: block;
+        text-align: center;
+    }
+}
+
+/* Media query for screens with a max width of 767px */
+@media only screen and (max-width: 767px) {
+    /* Display contact navigation */
+    .contact-nav {
+        display: block;
+    }
+}
+
+/* Media query for screens with a max width of 480px */
+@media only screen and (max-width: 480px) {
+    /* Hide the map on small screens */
+    #map {
+        display: none;
+    }
+}

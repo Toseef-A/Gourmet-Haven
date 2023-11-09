@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head section -->
+<head>
+    <!-- Include CSS libraries for styling -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <!-- Set the website's favicon -->
+    <link rel="website icon" href="Images/Logo.png">
+    <!-- Link to a custom CSS file for the Menu page -->
+    <link rel="stylesheet" href="Our-menu.css">
+    <!-- Link to Bootstrap 5.3.1 CSS library -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Set viewport and character encoding meta tags for responsive design and character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <!-- Set the title for the page -->
+    <title>Home page</title>
+    <!-- Define inline styles for the body element -->
+    <style class="bg-image bg-parallax overlay">
+        body {
+            /** Set the background image**/
+            background-image: url(Images/Background-Image.jpeg);
+            /** Prevent background image from repeating **/
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<!-- /Head section -->
+
+<!-- Body section -->
+<body>
+    <!-- Header section -->
+    <header>
+        <!-- Navigation bar with a dark theme -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container-fluid">
+                <!-- Display the website logo -->
+                <img class="logo" src="Images/Logo.png" alt="logo" width="50" height="50">
+                <!-- Navbar toggler for small screens -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navbar items -->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ms-auto">
+                        <!-- Home link -->
+                        <li class="nav-item">
+                            <a class="nav-link underline-on-hover" href="index.html">Home</a>
+                        </li>
+                        <!-- About link -->
+                        <li class="nav-item">
+                            <a class="nav-link underline-on-hover" href="About.html">About</a>
+                        </li>
+                        <!-- Menu link (fix the typo here) -->
+                        <li class="nav-item">
+                            <a class="nav-link underline-on-hover" href="Our-menu.html">Menu</a>
+                        </li>
+                        <!-- Reservation link -->
+                        <li class="nav-item">
+                            <a class="nav-link underline-on-hover" href="Reservation.html">Reservation</a>
+                        </li>
+                        <!-- Contact link -->
+                        <li class="nav-item">
+                            <a class="nav-link underline-on-hover" href="#footer">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /Navbar items -->
+            </div>
+        </nav>
+        <!-- /Navigation bar with a dark theme -->
+    </header>
+    <!--/Header section-->
+
+    <!-- Main content -->
+    <main>
+        <!-- Menu section-->
+        <div id="menu" class="section">
+
+            <!-- Background Image for the Menu section -->
+            <div class="bg-image bg-parallax overlay" style="background-image:url(Images/Background-Image.jpeg)">
+            </div>
+            <!-- Container for the Menu section -->
+            <div class="container">
+
+                <!-- row -->
+                <div class="row">
+
+                    <!-- Section Header for the Menu section -->
+                    <div class="section-header text-center">
+                        <!-- Subtitle for the menu section -->
+                        <h4 class="sub-title">Discover</h4>
+                        <!-- Title for the menu section -->
+                        <h2 class="title white-text">Our Menu</h2>
+                    </div>
+
+                    <!-- Menu Navigation for different menu categories -->
+                    <ul class="menu-nav">
+                        <li class="active">
+                            <!-- Menu item for Lunch with a link -->
+                            <a data-toggle="tab" class="underline-on-hover" href="#Lunch" aria-expanded="true">Lunch</a>
+                        </li>
+
+                        <li class="">
+                            <!-- Menu item for Dinner with a link -->
+                            <a data-toggle="tab" class="underline-on-hover" href="#Dinner" aria-expanded="false">Dinner</a>
+                        </li>
+
+                        <li class="">
+                            <!-- Menu item for Drinks with a link -->
+                            <a data-toggle="tab" class="underline-on-hover" href="#Drinks" aria-expanded="false">Drinks</a>
+                        </li>
+
+                        <li class="">
+                            <!-- Menu item for Dessert with a link -->
+                            <a data-toggle="tab" class="underline-on-hover" href="#Dessert" aria-expanded="false">Dessert</a>
+                        </li>
+
+                    </ul>
+                    <!-- /Menu Navigation -->
+
+                    <!-- Menu content -->
+                    <div id="menu-content" class="tab-content">
+
+                        <!-- Lunch -->
+                        <div id="Lunch" class="tab-pane fade active in">
+                            <!-- Chicken Wrap -->
+                            <div class="row item1">
+                                <div class="col-md-6 d-flex flex-column justify-content-center">
+                                    <div class="single-dish">
+                                        <div class="single-dish-heading">
+                                            <!-- Name of Item -->
+                                            <h4 class="name">Chicken Wrap</h4>
+                                            <!-- Price of Item -->
+                                            <h4 class="price">£8</h4>
+                                        </div>
+                                        <!-- Description of Chicken Wrap -->
+                                        <p>Mix diced chicken with chopped walnuts, apples, and celery. Held everything together with Greek yogurt and add some greens before wrapping it up.</p>
+                                        <!-- Button to add 'Chicken Wrap' dish to the basket with a price of £8.00 -->
+                                        <button class="main-button underline-on-hover" onclick="addToBasket('Chicken Wrap', 8.00)">Add to Basket</button>
+                                    </div>
+                                </div>
+
+                                <!-- Chicken Wrap image -->
+                                <div class="col-md-6">
+                                    <div class="Menu-image">
+                                        <img src="Images/Chicken-Wrap.webp" alt="Chicken Wrap">
+                                    </div> 
+                                </div>
+                                <!-- /Chicken Wrap image -->
+                            </div>
+                            <!-- /Chicken Wrap -->
+
+                            <!-- Lentil Salad -->
+                            <div class="row item2">
+                                <div class="col-md-6 d-flex flex-column justify-content-center order-md-2">
+                                    <div class="single-dish">
+                                        <div class="single-dish-heading">
+                                            <!-- Name of Item -->
+                                            <h4 class="name">Lentil Salad</h4>
+                                            <!-- Price of Item -->
+                                            <h4 class="price">£6</h4>
+                                        </div>
+                                        <!-- Description of Lentil Salad -->
+                                        <p>Lentil salad is a filling dish full of delicious Mediterranean ingredients that are sure to keep you full with a ton of fiber and great texture.</p>
+                                        <!-- Button to add 'Lentil Salad' dish to the basket with a price of £6.00 -->
+                                        <button class="main-button underline-on-hover" onclick="addToBasket('Lentil Salad', 6.00)">Add to Basket</button>
+                                    </div>
+                                </div>
+
+                                <!-- Lentil Salad image -->
+                                <div class="col-md-6 order-md-1">
+                                    <div class="Menu-image">
+                                        <img src="Images/Lentil-Salad.webp" alt="Lentil Salad">
+                                    </div> 
+                                </div>
+                                <!-- /Lentil Salad image -->
+                            </div>
+                            <!-- /Lentil Salad -->
+
+                            <!-- Chicken Pita with Fresh Herbs -->
+                            <div class="row item3">
+                                <div class="col-md-6 d-flex flex-column justify-content-center">
+                                    <div class="single-dish">
+                                        <div class="single-dish-heading">
+                                            <!-- Name of Item -->
+                                            <h4 class="name">Chicken Pita with Fresh Herbs</h4>
+                                            <!-- Price of Item -->
+                                            <h4 class="price">£8</h4>
+                                        </div>
+                                        <!-- Description of Chicken Pita with Fresh Herbs -->
+                                        <p>Packed with vegetables and whole grains, an herbed chicken pita is also high in the types of protein encouraged by the Mediterranean diet.</p>
+                                        <!-- Button to add 'Chicken Pita with Fresh Herbs' dish to the basket with a price of £8.00 -->
+                                        <button class="main-button underline-on-hover" onclick="addToBasket('Homemade Chicken Pita with Fresh Herbs', 8.00)">Add to Basket</button>
+                                    </div>
+                                </div>
+
+                                <!-- Chicken Pita with Fresh Herbs image -->
+                                <div class="col-md-6">
+                                    <div class="Menu-image">
+                                        <img src="Images/Homemade-Chicken-Pita-with-Fresh-Herbs.webp" alt="Homemade Chicken Pita with Fresh Herbs">
+                                    </div> 
+                                </div>
+                                <!-- /Chicken Pita with Fresh Herbs image -->
+                            </div>
+                            <!-- /Chicken Pita with Fresh Herbs -->
+
+                            <!-- Roasted Chickpeas -->
+                            <div class="row item4">
+                                <div class="col-md-6 d-flex flex-column justify-content-center order-md-2">
+                                    <div class="single-dish">
+                                        <div class="single-dish-heading">
+                                            <!-- Name of Item -->
+                                            <h4 class="name">Roasted Chickpeas</h4>
+                                            <!-- Price of Item -->
+                                            <h4 class="price">£5</h4>
+                                        </div>
+                                        <!-- Description of Roasted Chickpeas -->
+                                        <p>Chickpeas with olive oil and spices and roasting for a crunchy, savory meal.</p>
+                                        <!-- Button to add 'Roasted Chickpeas' dish to the basket with a price of £5.00 -->
+                                        <button class="main-button underline-on-hover" onclick="addToBasket('Roasted Chickpeas', 5.00)">Add to Basket</button>
+                                    </div>
+                                </div>
+
+                                <!-- Roasted Chickpeas image -->
+                                <div class="col-md-6 order-md-1">
+                                    <div class="Menu-image">
+                                        <img src="Images/Roasted-Chickpeas.webp" alt="Roasted Chickpeas">
+                                    </div> 
+                                </div>
+                                <!-- /Roasted Chickpeas image -->
+                            </div>
+                            <!-- /Roasted Chickpeas -->
+
+                            <!-- Niçoise salad -->
+                            <div class="row item5">
+                                <div class="col-md-6 d-flex flex-column justify-content-center">
+                                    <div class="single-dish">
+                                        <div class="single-dish-heading">
+                                            <!-- Name of Item -->
+                                            <h4 class="name">Niçoise salad</h4>
+                                            <!-- Price of Item -->
+                                            <h4 class="price">£5</h4>
+                                        </div>
+                                        <!-- Description of Niçoise salad -->
+                                        <p>Salad made with salmon for a tasty twist on a classic. You can also include extras like boiled potatoes, steamed green beans, or other vegetables.</p>
+                                        <!-- Button to add 'Niçoise salad' dish to the basket with a price of £5.00 -->
+                                        <button class="main-button underline-on-hover" onclick="addToBasket('Niçoise salad', 5.00)">Add to Basket</button>
+                                    </div>
+                                </div>
+
+                                <!-- Niçoise salad image -->
+                                <div class="col-md-6">
+                                    <div class="Menu-image">
+                                        <img src="Images/Nicoise-Salad.webp" alt="Nocoise salad">
+                                    </div> 
+                                </div>
+                                <!-- /Niçoise salad image -->
+                            </div>
+                            <!-- /Niçoise salad -->
+                        </div>
+                        <!-- /Lunch -->
+                    
+                        <!-- Dinner -->
+                        <div id="Dinner" class="tab-pane fade">
+                            <!-- Classic Moussaka -->
+                            <div class="row item1">
+                                <div class="col-md-6 d-flex flex-column justify-content-center">
+                                    <div class="single-dish">
+                                        <div class="single-dish-heading">
+                                            <!-- Name of Item -->
+                                            <h4 class="name">Classic Moussaka</h4>
+                                            <!-- Price of Item -->
+                                            <h4 class="price">£15</h4>
+                                        </div>
+                                        <!-- Description of Classic Moussaka -->
+                                        <p>It consists of layers of pan-fried eggplant, a thick, rich lamb-tomato sauce, and a topping of deliciously creamy bechamel sauce.</p>
+                                        <!-- Button to add 'Classic Moussaka' dish to the basket with a price of £15.00 -->
+                                        <button class="main-button underline-on-hover" onclick="addToBasket('Classic Moussaka', 15.00)">Add to Basket</button>
+                                    </div>
+                                </div>
+                                <!-- /Classic Moussaka dish -->
+
+                                <!-- Classic Moussaka image -->
+                                <div class="col-md-6">
+                                    <div class="Menu-image">
+                                        <img src="Images/Classic-Moussaka.jpeg" alt="Classic Moussaka">
+                                    </div> 
+                                </div>
+                                <!-- /Classic Moussaka image -->
+                            </div>
+                            <!-- /Classic Moussaka -->
+
+                            <!-- Beef kibbeh with roasted pumpkin hummus -->
+                            <div class="row item2">
+                                <div class="col-md-6 d-flex flex-column justify-content-center order-md-2">
+                                    <div class="single-dish">
+                                        <div class="single-dish-heading">
+                                            <!-- Name of Item -->
+                                            <h4 class="name">Beef kibbeh with roasted pumpkin hummus</h4>
+                                            <!-- Price of Item -->
+                                            <h4 class="price">£12</h4>
+                                        </div>
+                                        <!-- Description of Beef kibbeh with roasted pumpkin hummus -->
+                                        <p>Roast pumpkin takes this homemade hummus to a whole new level of deliciousness</p>
+                                        <!-- Button to add 'Beef kibbeh with roasted pumpkin hummus' dish to the basket with a price of £12.00 -->
+                                        <button class="main-button underline-on-hover" onclick="addToBasket('Beef kibbeh with roasted pumpkin hummus', 12.00)">Add to Basket</button>
+                                    </div>
+                                </div>
+
+                                <!-- Beef kibbeh with roasted pumpkin hummus Image-->
+                                <div class="col-md-6 order-md-1">
+                                    <div class="Menu-image">
+                                        <img src="Images/Beef-kibbeh-with-roasted-pumpkin-hummus.jpg" alt="Beef kibbeh with roasted pumpkin hummus">
+                                    </div> 
+                                </div>
+                                <!-- /Beef kibbeh with roasted pumpkin hummus Image-->
+                            </div>
+                            <!-- /Beef kibbeh with roasted pumpkin hummus -->
+
+                            <!-- Lamb chops with Greek fattoush salad -->
+                            <div class="row item3">
+                                <div class="col-md-6 d-flex flex-column justify-content-center">
+                                    <div class="single-dish">
+                                        <div class="single-dish-heading">
+                                            <!-- Name of Item -->
+                                            <h4 class="name">Lamb chops with Greek fattoush salad</h4>
+                                            <!-- Price of Item -->
+                                            <h4 class="price">£20</h4>
+                                        </div>
+                                        <!-- Description of Lamb chops with Greek fattoush salad -->
+                                        <p>Try these juicy lamb chops served with a fresh Greek fattoush salad.</p>
+                                        <!-- Button to add 'Lamb chops with Greek fattoush salad' dish to the basket with a price of £20.00 -->
+                                        <button class="main-button underline-on-hover" onclick="addToBasket('Lamb chops with Greek fattoush salad', 20.00)">Add to Basket</button>
+                                    </div>
+                                </div>
+
+                                <!-- Lamb chops with Greek fattoush salad Image-->
+                                <div class="col-md-6">
+                                    <div class="Menu-image">
+                                        <img src="Images/Lamb-chops-with-Greek-fattoush-salad.jpeg" alt="Lamb chops with Greek fattoush salad">
+                                    </div> 
+                                </div>
+                            </div>
+                            <!-- /Lamb chops with Greek fattoush salad Image-->
+
+                            <!-- Easy Morrocan Lamb Tagine -->
+                            <div class="row item4">
+                                <div class="col-md-6 d-flex flex-column justify-content-center order-md-2">
+                                    <div class="single-dish">
+                                        <div class="single-dish-heading">
+                                            <!-- Name of Item -->
+                                            <h4 class="name">Easy Morrocan Lamb Tagine</h4>
+                                            <!-- Price of Item -->
+                                            <h4 class="price">£18</h4>
+                                        </div>
+                                        <!-- Description of Easy Morrocan Lamb Tagine -->
+                                        <p>Lift the lid on this conical cooking pot and unveil the secrets to mouth-watering Moroccan cuisine.</p>
+                                        <!-- Button to add 'Easy Morrocan Lamb Tagine' dish to the basket with a price of £18.00 -->
+                                        <button class="main-button underline-on-hover" onclick="addToBasket('Easy Morrocan Lamb Tagine', 18.00)">Add to Basket</button>
+                                    </div>
+                                </div>
+
+                                <!-- Easy Morrocan Lamb Tagine image -->
+                                <div class="col-md-6 order-md-1">
+                                    <div class="Menu-image">
+                                        <img src="Images/Easy-Morrocan-Lamb-Tagine.jpeg" alt="Easy Morrocan Lamb Tagine">
+                                    </div> 
+                                </div>
+                                <!-- /Easy Morrocan Lamb Tagine image -->
+                            </div>
+                            <!-- /Easy Morrocan Lamb Tagine -->
+
+                            <!-- Roasted Mediterranean vegetable and barley risotto -->
+                            <div class="row item5">
+                                <div class="col-md-6 d-flex flex-column justify-content-center">
+                                    <div class="single-dish">
+                                        <div class="single-dish-heading">
+                                            <!-- Name of Item -->
+                                            <h4 class="name">Roasted Mediterranean vegetable and barley risotto</h4>
+                                            <!-- Price of Item -->
+                                            <h4 class="price">£12</h4>
+                                        </div>
+                                        <!-- Description of Roasted Mediterranean vegetable and barley risotto -->
+                                        <p>With roasted mediterranean vegetables and barley risotto, this twist on a classic is a perfect mid-week vegetarian dinner.</p>
+                                        <!-- Button to add 'Roasted Mediterranean vegetable and barley risotto' dish to the basket with a price of £12.00 -->
+                                        <button class="main-button underline-on-hover" onclick="addToBasket('Roasted Mediterranean vegetable and barley risotto', 12.00)">Add to Basket</button>
+                                    </div>
+                                </div>
+
+                                <!-- Roasted Mediterranean vegetable and barley risotto image -->
+                                <div class="col-md-6">
+                                    <div class="Menu-image">
+                                        <img src="Images/Roasted-Mediterranean-Vegetable-and-Barley-Risotto.jpg" alt="Roasted Mediterranean vegetable and barley risotto">
+                                    </div> 
+                                </div>
+                                <!-- /Roasted Mediterranean vegetable and barley risotto image -->
+                            </div>
+                            <!-- /Roasted Mediterranean vegetable and barley risotto -->
+                        </div>
+                        <!-- /Dinner -->
+
+                        <!-- Drinks -->
+                        <div id="Drinks" class="tab-pane fade">
+                            <!-- Vodka Gimlet -->
+                            <div class="row item1">
+                                <div class="col-md-6 d-flex flex-column justify-content-center">
+                                    <div class="single-dish">
+                                        <div class="single-dish-heading">
+                                            <!-- Name of Item -->
+                                            <h4 class="name">Vodka Gimlet</h4>
+                                            <!-- Price of Item -->
+                                            <h4 class="price">£9</h4>
+                                        </div>
+                                        <!-- Description of Vodka Gimlet -->
+                                        <p>This simple cocktail is perfect if you're ready to upgrade from your go-to vodka soda. It's bracing, sweet, and a little sour.</p>
+                                        <!-- Button to add 'Vodka Gimlet' dish to the basket with a price of £9.00 -->
+                                        <button class="main-button underline-on-hover" onclick="addToBasket('Vodka Gimlet', 9.00)">Add to Basket</button>
+                                    </div>
+                                </div>
+
+                                <!-- Vodka Gimlet image -->
+                                <div class="col-md-6">
+                                    <div class="Menu-image">
+                                        <img src="Images/Vodka-Gimlet.png" alt="Vodka Gimlet">
+                                    </div> 
+                                </div>
+                                <!-- /Vodka Gimlet image -->
+                            </div>
+                            <!-- /Vodka Gimlet -->
+
+                            <!-- Honey Bee -->
+                            <div class="row item2">
+                                <div class="col-md-6 d-flex flex-column justify-content-center order-md-2">
+                                    <div class="single-dish">
+                                        <div class="single-dish-heading">
+                                            <!-- Name of Item -->
+                                            <h4 class="name">Honey Bee</h4>
+                                            <!-- Price of Item -->
+                                            <h4 class="price">£11</h4>
+                                        </div>
+                                        <!-- Description of Honey Bee -->
+                                        <p>This citrus-y, sweet drink made with honey and white rum is best enjoyed during the first truly glorious day of spring.</p>
+                                        <!-- Button to add 'Honey Bee' dish to the basket with a price of £11.00 -->
+                                        <button class="main-button underline-on-hover" onclick="addToBasket('Honey Bee', 11.00)">Add to Basket</button>
+                                    </div>
+                                </div>
+
+                                <!-- Honey Bee image -->
+                                <div class="col-md-6 order-md-1">
+                                    <div class="Menu-image">
+                                        <img src="Images/Honey-Bee.png" alt="Honey Bee">
+                                    </div> 
+                                </div>
+                                <!-- /Honey Bee image -->
+                            </div>
+                            <!-- /Honey Bee -->
+
+                            <!-- Dirty Martini -->
+                            <div class="row item3">
+                                <div class="col-md-6 d-flex flex-column justify-content-center">
+                                    <div class="single-dish">
+                                        <div class="single-dish-heading">
+                                            <!-- Name of Item -->
+                                            <h4 class="name">Dirty Martini</h4>
+                                            <!-- Price of Item -->
+                                            <h4 class="price">£12</h4>
+                                        </div>
+                                        <!-- Description of Dirty Martini -->
+                                        <p>Nothing hits the spot quite like a bold, briny martini. Pro tip: Ask your bartender to make it "extra dirty" (meaning, with extra olive juice).</p>
+                                        <!-- Button to add 'Dirty Martini' dish to the basket with a price of £12.00 -->
+                                        <button class="main-button underline-on-hover" onclick="addToBasket('Dirty Martini', 12.00)">Add to Basket</button>
+                                    </div>
+                                </div>
+
+                                <!-- Dirty Martini image -->
+                                <div class="col-md-6">
+                                    <div class="Menu-image">
+                                        <img src="Images/Dirty-Martini.jpg" alt="Dirty Martini">
+                                    </div> 
+                                </div>
+                                <!-- /Dirty Martini image -->
+                            </div>
+                            <!-- /Dirty Martini -->
+
+                            <!-- Rosita -->
+                            <div class="row item4">
+                                <div class="col-md-6 d-flex flex-column justify-content-center order-md-2">
+                                    <div class="single-dish">
+                                        <div class="single-dish-heading">
+                                            <!-- Name of Item -->
+                                            <h4 class="name">Rosita</h4>
+                                            <!-- Price of Item -->
+                                            <h4 class="price">£9</h4>
+                                        </div>
+                                        <!-- Description of Rosita -->
+                                        <p>This complex cocktail with Mexican, Italian, and Trinidadian influences is perfect for summer.</p>
+                                        <!-- Button to add 'Rosita' dish to the basket with a price of £9.00 -->
+                                        <button class="main-button underline-on-hover" onclick="addToBasket('Rosita', 9.00)">Add to Basket</button>
+                                    </div>
+                                </div>
+
+                                <!-- Rosita image -->
+                                <div class="col-md-6 order-md-1">
+                                    <div class="Menu-image">
+                                        <img src="Images/Rosita.png" alt="Rosita">
+                                    </div> 
+                                </div>
+                                <!-- /Rosita image -->
+                            </div>
+                            <!-- /Rosita -->
+
+                            <!-- Painkiller -->
+                            <div class="row item5">
+                                <div class="col-md-6 d-flex flex-column justify-content-center">
+                                    <div class="single-dish">
+                                        <div class="single-dish-heading">
+                                            <!-- Name of Item -->
+                                            <h4 class="name">Painkiller</h4>
+                                            <!-- Price of Item -->
+                                            <h4 class="price">£15</h4>
+                                        </div>
+                                        <!-- Description of Painkiller -->
+                                        <p>Forget wasting away in Margaritaville: Change things up with this creamy rum cocktail made with two kinds of fruit juice.</p>
+                                        <!-- Button to add 'Painkiller' dish to the basket with a price of £15.00 -->
+                                        <button class="main-button underline-on-hover" onclick="addToBasket('Painkiller', 15.00)">Add to Basket</button>
+                                    </div>
+                                </div>
+
+                                <!-- Painkiller image -->
+                                <div class="col-md-6">
+                                    <div class="Menu-image">
+                                        <img src="Images/Painkiller.png" alt="Painkiller">
+                                    </div> 
+                                </div>
+                                <!-- /Painkiller image -->
+                            </div>
+                            <!-- /Painkiller -->
+                        </div>
+                        <!-- /Drinks -->
+
+                        <!-- Dessert -->
+                        <div id="Dessert" class="tab-pane fade">
+                            <!-- Turmeric, Ginger, and Honey Affogato -->
+                            <div class="row item1">
+                                <div class="col-md-6 d-flex flex-column justify-content-center">
+                                    <div class="single-dish">
+                                        <div class="single-dish-heading">
+                                            <!-- Name of Item -->
+                                            <h4 class="name">Turmeric, Ginger, and Honey Affogato</h4>
+                                            <!-- Price of Item -->
+                                            <h4 class="price">£7</h4>
+                                        </div>
+                                        <!-- Description of Turmeric, Ginger, and Honey Affogato -->
+                                        <p>Inspired by the traditional Italian gelato drowned in espresso, this rendition features other regional flavors (and anti-inflammatory elements), including fresh ginger and ground turmeric.</p>
+                                        <!-- Button to add 'Turmeric, Ginger, and Honey Affogato' dish to the basket with a price of £7.00 -->
+                                        <button class="main-button underline-on-hover" onclick="addToBasket('Turmeric, Ginger, and Honey Affogato', 7.00)">Add to Basket</button>
+                                    </div>
+                                </div>
+
+                                <!-- Turmeric, Ginger, and Honey Affogato image -->
+                                <div class="col-md-6">
+                                    <div class="Menu-image">
+                                        <img src="Images/Turmeric-Ginger-and-Honey-Affogato.webp" alt="Turmeric, Ginger, and Honey Affogato">
+                                    </div> 
+                                </div>
+                                <!-- /Turmeric, Ginger, and Honey Affogato image -->
+                            </div>
+                            <!-- /Turmeric, Ginger, and Honey Affogato -->
+
+                            <!-- Spiced Roasted Fruit -->
+                            <div class="row item2">
+                                <div class="col-md-6 d-flex flex-column justify-content-center order-md-2">
+                                    <div class="single-dish">
+                                        <div class="single-dish-heading">
+                                            <!-- Name of Item -->
+                                            <h4 class="name">Spiced Roasted Fruit</h4>
+                                            <!-- Price of Item -->
+                                            <h4 class="price">£6</h4>
+                                        </div>
+                                        <!-- Description of Spiced Roasted Fruit -->
+                                        <p>Top a bowl of ricotta or Greek yogurt with a generous spoonful of cinnamon-scented roasted fruit for a treat that even the most ardent ice-cream fans will admit is delicious.</p>
+                                        <!-- Button to add 'Spiced Roasted Fruit' dish to the basket with a price of £6.00 -->
+                                        <button class="main-button underline-on-hover" onclick="addToBasket('Spiced Roasted Fruit', 6.00)">Add to Basket</button>
+                                    </div>
+                                </div>
+                                <!-- /Spiced Roasted Fruit dish -->
+
+                                <!-- Spiced Roasted Fruit image -->
+                                <div class="col-md-6 order-md-1">
+                                    <div class="Menu-image">
+                                        <img src="Images/Spiced-Roasted-Fruit.webp" alt="Spiced Roasted Fruit">
+                                    </div>
+                                </div>
+                                <!-- /Spiced Roasted Fruit image -->
+                            </div>
+                            <!-- /Spiced Roasted Fruit -->
+
+                            <!-- Chocolate Almond Butter Fruit Dip -->
+                            <div class="row item3">
+                                <div class="col-md-6 d-flex flex-column justify-content-center">
+                                    <div class="single-dish">
+                                        <div class="single-dish-heading">
+                                            <!-- Name of Item -->
+                                            <h4 class="name">Chocolate Almond Butter Fruit Dip</h4>
+                                            <!-- Price of Item -->
+                                            <h4 class="price">£5</h4>
+                                        </div>
+                                        <!-- Description of Chocolate Almond Butter Fruit Dip -->
+                                        <p>If you like hummus, you'll probably love this sweet, scoopable dessert. Including Greek yogurt and heart-healthy almond butter</p>
+                                        <!-- Button to add 'Chocolate Almond Butter Fruit Dip' dish to the basket with a price of £5.00 -->
+                                        <button class="main-button underline-on-hover" onclick="addToBasket('Chocolate Almond Butter Fruit Dip', 5.00)">Add to Basket</button>
+                                    </div>
+                                </div>
+
+                                <!-- Chocolate Almond Butter Fruit Dip image -->
+                                <div class="col-md-6">
+                                    <div class="Menu-image">
+                                        <img src="Images/Chocolate-Almond-Butter-Fruit-Dip.webp" alt="Chocolate Almond Butter Fruit Dip">
+                                    </div> 
+                                </div>
+                                <!-- /Chocolate Almond Butter Fruit Dip image -->
+                            </div>
+                            <!-- /Chocolate Almond Butter Fruit Dip -->
+
+                            <!-- Lemon Cream Pavlova with Berries -->
+                            <div class="row item4">
+                                <div class="col-md-6 d-flex flex-column justify-content-center order-md-2">
+                                    <div class="single-dish">
+                                        <div class="single-dish-heading">
+                                            <!-- Name of Item -->
+                                            <h4 class="name">Lemon Cream Pavlova with Berries</h4>
+                                            <!-- Price of Item -->
+                                            <h4 class="price">£12</h4>
+                                        </div>
+                                        <!-- Description of Lemon Cream Pavlova with Berries -->
+                                        <p>Fresh raspberries team with chopped pistachios and a lemon curd cream, for a light and luscious Mediterranean treat.</p>
+                                        <!-- Button to add 'Lemon Cream Pavlova with Berries' dish to the basket with a price of £12.00 -->
+                                        <button class="main-button underline-on-hover" onclick="addToBasket('Lemon Cream Pavlova with Berries', 12.00)">Add to Basket</button>
+                                    </div>
+                                </div>
+
+                                <!-- Lemon Cream Pavlova with Berries image -->
+                                <div class="col-md-6 order-md-1">
+                                    <div class="Menu-image">
+                                        <img src="Images/Lemon-Cream-Pavlova-with-Berries.webp" alt="Lemon Cream Pavlova with Berries">
+                                    </div> 
+                                </div>
+                                <!-- /Lemon Cream Pavlova with Berries image -->
+                            </div>
+                            <!-- /Lemon Cream Pavlova with Berries -->
+
+                            <!-- Lemon Olive Oil Cake -->
+                            <div class="row item5">
+                                <div class="col-md-6 d-flex flex-column justify-content-center">
+                                    <div class="single-dish">
+                                        <div class="single-dish-heading">
+                                            <!-- Name of Item -->
+                                            <h4 class="name">Lemon Olive Oil Cake</h4>
+                                            <!-- Price of Item -->
+                                            <h4 class="price">£11</h4>
+                                        </div>
+                                        <!-- Description of Lemon Olive Oil Cake -->
+                                        <p> Fruity Italian olive oil accentuates the lemon flavor in this indulgent Mediterranean dessert, along with making the texture remarkably tender. </p>
+                                        <!-- Button to add 'Lemon Olive Oil Cake' dish to the basket with a price of £11.00 -->
+                                        <button class="main-button underline-on-hover" onclick="addToBasket('Lemon Olive Oil Cake', 11.00)">Add to Basket</button>
+                                    </div>
+                                </div>
+
+                                <!-- Lemon Olive Oil Cake image -->
+                                <div class="col-md-6">
+                                    <div class="Menu-image">
+                                        <img src="Images/Lemon-Olive-Oil-Cake.webp" alt="Lemon Olive Oil Cake">
+                                    </div> 
+                                </div>
+                                <!-- /Lemon Olive Oil Cake image -->
+                            </div>
+                            <!-- /Lemon Olive Oil Cake -->
+                        </div>
+                        <!-- /Dessert -->
+
+                    </div>
+                    <!-- /Menu content -->
+
+                </div>
+                <!-- /row -->
+
+            </div>
+            <!-- /Container for the Menu section -->
+        <!-- Basket-->
+        <div class="Basket">
+            <!-- Heading for the shopping basket -->
+            <h2>Your Basket</h2>
+            <ul id="BasketItems">
+                <!-- Basket items will be displayed here -->
+            </ul>
+            <!-- Display the total cost of items in the basket -->
+            <p>Total: £<span id="BasketTotal">0.00</span></p>
+            <!-- Button to initiate the purchase -->
+            <button class="main-button underline-on-hover" onclick="buy()">Buy now</button>
+        </div>
+        <!-- /Basket-->    
+        </div>
+        <!-- Container for the Menu section -->
+
+    </main>
+    <!-- /Main content -->
+
+    <!-- Footer section -->
+    <footer id="footer" class="py-4">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Left column with navigation links -->
+                <div class="col-md-4 col-md-2 mb-3 ml-2">
+                    <h5 class="footer-title">Gourmet Haven</h5>
+                    <ul class="nav flex-column">
+                        <!-- Navigation link to Home section -->
+                        <li class="nav-item mb-2 underline-on-hover"><a href="index.html" class="nav-link">Home</a></li>
+                        <!-- Navigation link to About section -->
+                        <li class="nav-item mb-2 underline-on-hover"><a href="About.html" class="nav-link">About us</a></li>
+                        <!-- Navigation link to Menu section -->
+                        <li class="nav-item mb-2 underline-on-hover"><a href="Our-menu.html" class="nav-link">Menu</a></li>
+                        <!-- Navigation link to Reservation section -->
+                        <li class="nav-item mb-2 underline-on-hover"><a href="Reservation.html" class="nav-link">Reservation</a></li>
+                    </ul>
+                </div>
+
+                <!-- Middle column with contact information -->
+                <div class="col-md-4 col-md-4 mb-3">
+                    <!--Title-->
+                    <h5 class="footer-title">Contact Us</h5>
+                    <ul class="nav flex-column">
+                        <!--Address-->
+                        <li class="nav-item mb-2">123 Street, Manchester, UK</li>
+                        <!--Number-->
+                        <li class="nav-item mb-2">+44 1234567890</li>
+                        <!--Email-->
+                        <li class="nav-item mb-2">Gourmethaven@gmail.com</li>
+                    </ul>
+                </div>
+
+                <!-- Right column with opening times -->
+                <div class="col-md-4 col-md-2 mb-3">
+                    <!--Title-->
+                    <h5 class="footer-title">Opening Times</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">MONDAY-FRIDAY</li>
+                        <li class="nav-item mb-2">09AM-09PM</li>
+                        <li class="nav-item mb-2">SATURDAY-SUNDAY</li>
+                        <li class="nav-item mb-2">10AM-04PM</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Subscription form -->
+            <div class="col-md-12 d-flex flex-column flex-sm-row justify-content-center">
+                <form id="newsletterForm">
+                    <!--Title-->
+                    <h5 class="footer-title">Subscribe to our newsletter</h5>
+                    <!--Sub-title-->
+                    <p>Monthly digest of what's new and exciting from us.</p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <!-- Email input field for subscription -->
+                        <label for="newsletterEmail" class="visually-hidden">Email address</label>
+                        <input id="newsletterEmail" type="text" class="form-control" placeholder="Email address">
+                        <!-- Subscribe button -->
+                        <button class="btn btn-primary" type="button" id="subscribeButton">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+            <!-- /Subscription form -->
+
+            <!-- Copyright information -->
+            <div class="d-flex flex-column flex-sm-row justify-content-between my-2 border-top">
+                <p>© 2023 Gourmet Haven, Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery library 3.4.1 (Slim version) with integrity and crossorigin attributes -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+    <!-- jQuery library 3.6.0 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Popper.js (1.16.0) for Bootstrap with integrity and crossorigin attributes -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap 4.4.1 JavaScript library with integrity and crossorigin attributes -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- jQuery library 3.6.0 (again) - Remove duplicate reference -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Bootstrap 5.3.1 JavaScript library (Bootstrap bundle) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom scripts for your website -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="Our-menu.js"></script>
+
+    <!-- Owl Carousel 2.2.1 JavaScript library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+</body>
+
+</html>

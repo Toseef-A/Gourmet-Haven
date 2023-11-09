@@ -1,0 +1,373 @@
+/*------------------------------------*\
+	Body
+\*------------------------------------*/
+
+/* Add underline and change color on link hover */
+.underline-on-hover:hover {
+    text-decoration: underline;
+    color: #f36700;
+}
+
+/* Style for white text */
+.white-text {
+    color: #FFF;
+}
+
+/* Define selection color for paragraphs and headings */
+p::selection {
+    color: #f36700;
+    background-color: blue;
+}
+
+h1::selection {
+    color: #f36700;
+    background-color: blue;
+}
+
+h2::selection {
+    color: #f36700;
+    background-color: blue;
+}
+
+h3::selection {
+    color: #f36700;
+    background-color: blue;
+}
+
+h4::selection {
+    color: #f36700;
+    background-color: blue;
+}
+
+a::selection {
+    color: #f36700;
+    background-color: blue;
+}
+
+li::selection {
+    color: #f36700;
+    background-color: blue;
+}
+
+/* Style for section titles with an underline */
+.title:after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 2px;
+    background-color: #f36700;
+    margin: 15px 0px 30px;
+}
+
+/* Adjust title underline for text-centered sections */
+.text-center .title:after {
+    margin: 15px auto 30px;
+}
+
+/*------------------------------------*\
+    Navigation
+\*------------------------------------*/
+
+/* Style for navigation items, adding margin between them */
+.nav-item {
+    margin: 0 1em;
+}
+
+/* Change link color on hover in the navbar */
+.navbar-nav a:hover {
+    color: #f36700;
+}
+
+/* Change background color on hover for the navbar toggle button */
+.navbar-toggler:hover {
+    background-color: #f36700;
+}
+
+/*------------------------------------*\
+	About
+\*------------------------------------*/
+
+/* Styling for the About Us section */
+#about_us {
+    background-color: white;
+}
+
+/* Styling for the About Us section title */
+.About-us_title {
+    display: grid;
+    place-content: center;
+    padding-top: 10%;
+    color: #f36700;
+}
+
+/* Padding and text styling for the About Us section text */
+.About_us-text {
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+/* Styling for images in the About Us section */
+.About_us-image {
+    width: 100%;
+    padding-bottom: 10%;
+    padding-top: 10%;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+}
+ 
+/*------------------------------------*\
+	Team members
+\*------------------------------------*/
+
+/* Team members section title styling */
+#team-members {
+    padding-top: 10%;
+    font-weight: bolder;
+    font-size: xx-large;
+	color: #f36700;
+}
+
+/* Team members section subtitle styling */
+#team-members_subtitle {
+    display: grid;
+    place-items: center;
+    font-size: 30px;
+    margin-bottom: 10%;
+}
+
+/* White-box container styles for team members */
+.white-box {
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Team member image styles */
+.white-box_image {
+    max-height: 200px;
+    border-bottom: 1px solid #f36700;
+}
+
+/* Team member name styles */
+.white-box_name {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #f36700;
+}
+
+/*------------------------------------*\
+	Testimonials
+\*------------------------------------*/
+
+/* Testimonials section title styling */
+#Review-title {
+    font-weight: bolder;
+    padding-top: 10%;
+    color: #f36700;
+}
+
+/* Title underline styling */
+.title:after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 2px;
+    background-color: #f36700;
+    margin: 15px 0px 30px;
+}
+
+/* Title underline centering for text-center class */
+.text-center .title:after {
+    margin: 15px auto 30px;
+}
+
+/* Owl Carousel container styles */
+#owl-carousel {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 10%;
+}
+
+/* Owl Carousel item transition and padding styles */
+.owl-carousel .owl-item {
+    transition: all 0.3s ease-in-out;
+}
+
+.owl-carousel .owl-item .card {
+    padding: 30px;
+    position: relative;
+}
+
+/* Owl Carousel stage outer styles with overflow and padding */
+.owl-carousel .owl-stage-outer {
+    overflow-y: auto !important;
+    padding-bottom: 40px;
+}
+
+/* Owl Carousel image styles */
+.owl-carousel .owl-item img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Owl Carousel name label styles */
+.owl-carousel .owl-item .card .name {
+    position: absolute;
+    bottom: -20px;
+    left: 33%;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: #f36500;
+    padding: 0.3rem 0.4rem;
+    border-radius: 5px;
+    box-shadow: 2px 3px 15px #3c405a;
+}
+
+/* Owl Carousel card styles with opacity and transform */
+.owl-carousel .owl-item .card {
+    opacity: 0.2;
+    transform: scale3d(0.8, 0.8, 0.8);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Owl Carousel active item centering and styles */
+.owl-carousel .owl-item.active.center .card {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+}
+
+/* Owl Carousel dots container styles */
+.owl-carousel .owl-dots {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+/* Owl Carousel dot span styles */
+.owl-theme .owl-dots .owl-dot span {
+    height: 20px;
+    background: #f36500 !important;
+    border-radius: 2px !important;
+    opacity: 0.3;
+}
+
+/* Owl Carousel active dot span and hover styles */
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    height: 13px;
+    width: 13px;
+    opacity: 1;
+    transform: translateY(2px);
+    background: #f37000 !important;
+}
+
+/*------------------------------------*\
+	Footer
+\*------------------------------------*/
+
+/* Footer styles */
+footer {
+    background-color: black;
+    color: white;
+    padding-left: 25px;
+}
+
+/* Footer navigation link styles */
+#footer a.nav-link {
+    color: white;
+    text-decoration-line: none;
+    padding: 0%;
+}
+
+/* Footer navigation link hover styles */
+#footer a.nav-link:hover {
+    color: #f37000;
+}
+
+/* Footer title styles */
+.footer-title {
+    color: #f36700;
+}
+
+/*------------------------------------*\
+	Responsive
+\*------------------------------------*/
+
+/*------------------------------------*\
+    Responsive
+\*------------------------------------*/
+
+/* Media query for screens with a max width of 1201px */
+@media only screen and (max-width: 1201px) {
+    /* Hide the contact navigation */
+    .contact-nav {
+        display: none;
+    }
+    /* Adjust About Us text padding for responsiveness */
+    .About_us-text {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+/* Media query for screens with a min width of 1200px */
+@media (min-width:1200px) {
+	/* Adjust About Us text font size */
+	.About_us-text {
+		font-size: large;
+	}
+}
+
+/* Media query for screens with a max width of 991px */
+@media only screen and (max-width: 991px) {
+    /* Display copyright text centered */
+    .copyright {
+        display: block;
+        text-align: center;
+    }
+}
+
+/* Media query for screens with a max width of 767px */
+@media only screen and (max-width: 767px) {
+    /* Display contact navigation */
+    .contact-nav {
+        display: block;
+    }
+    .order-md-1 {
+        order: 2; /* Rearrange the first column to appear second */
+    }
+    .order-md-2 {
+        order: 1; /* Rearrange the second column to appear first */
+    }
+}
+
+/* Media query for screens with a min width of 768px and max width of 1500px */
+@media (min-width: 768px) and (max-width: 1500px) {
+    /* Add padding-top to About Us images */
+    .About_us-image {
+        padding-top: 25%;
+    }
+}
+
+/* Media query for screens with a min width of 480.6px and max width of 575.5px */
+@media (min-width: 480.6px) and (max-width: 575.5px) {
+    /* Adjust name label positioning in Owl Carousel */
+    .owl-carousel .owl-item .card .name {
+        left: 24%;
+    }
+}
+
+/* Media query for screens with a max width of 360px */
+@media (max-width: 360px) {
+    /* Adjust name label positioning in Owl Carousel */
+    .owl-carousel .owl-item .card .name {
+        left: 30%;
+    }
+}

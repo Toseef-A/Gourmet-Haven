@@ -1,0 +1,405 @@
+/*------------------------------------*\
+	Body
+\*------------------------------------*/
+
+/* Set body text color, font size, and hide horizontal scrollbar */
+body {
+    color: #969696;
+    font-size: 16px;
+    overflow-x: hidden;
+    font-family: 'Cabin', sans-serif;
+}
+
+/* Remove background color on links */
+a {
+    background-color: transparent;
+}
+
+/* Add underline and change color on link hover */
+.underline-on-hover:hover {
+    text-decoration: underline;
+    color: #f36700;
+}
+
+/* Style for white text */
+.white-text {
+    color: #FFF;
+}
+
+/* Define selection color for paragraphs and headings */
+p::selection {
+    color: #f36700;
+    background-color: blue;
+}
+
+h1::selection {
+    color: #f36700;
+    background-color: blue;
+}
+
+h2::selection {
+    color: #f36700;
+    background-color: blue;
+}
+
+h3::selection {
+    color: #f36700;
+    background-color: blue;
+}
+
+h4::selection {
+    color: #f36700;
+    background-color: blue;
+}
+
+a::selection {
+    color: #f36700;
+    background-color: blue;
+}
+
+li::selection {
+    color: #f36700;
+    background-color: blue;
+}
+
+/* Style for section titles with an underline */
+.title:after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 2px;
+    background-color: #f36700;
+    margin: 15px 0px 30px;
+}
+
+/* Adjust title underline for text-centered sections */
+.text-center .title:after {
+    margin: 15px auto 30px;
+}
+
+/* --- Background Image --- */
+
+/* Style for background images */
+.bg-image {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+/* Enable parallax effect for background images */
+.bg-image.bg-parallax {
+    background-attachment: fixed;
+}
+
+/* Create an overlay for background images */
+.bg-image.overlay:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.7;
+    background-color: #000;
+}
+
+/* --- Buttons --- */
+
+/* Style for main buttons */
+.main-button {
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 40px;
+    background-color: #f36700;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: 0.2s opacity;
+    text-decoration-line: none;
+}
+
+/* Change button color and opacity on hover */
+.main-button:hover {
+    color: #f36700;
+    opacity: 0.8;
+}
+
+/*------------------------------------*\
+	Navigation
+\*------------------------------------*/
+
+/* Style for navigation items, adding margin between them */
+.nav-item {
+    margin: 0 1em;
+}
+
+/* Change link color on hover in the navbar */
+.navbar-nav a:hover {
+    color: #f36700;
+}
+
+/* Change background color on hover for the navbar toggle button */
+.navbar-toggler:hover {
+    background-color: #f36700;
+}
+
+/*------------------------------------*\
+	Menu
+\*------------------------------------*/
+/* Menu navigation styles */
+.menu-nav {
+    text-align: center;
+}
+
+/* Menu navigation list item styles */
+.menu-nav li {
+    position: relative;
+    display: inline-block;
+    margin-right: -4px;
+    border-bottom: 1px solid #ECECEC;
+    background-color: #FFF;
+}
+
+/* Menu navigation list item spacing */
+.menu-nav li + li {
+    box-shadow: -1px 0px 0px 0px #ECECEC;
+}
+
+/* Menu navigation link styles */
+.menu-nav li a {
+    font-family: 'Quicksand', sans-serif;
+    display: block;
+    padding: 30px;
+    text-decoration-line: none;
+}
+
+/* Active menu item styles */
+.menu-nav li.active > a {
+    color: #FFF;
+    background-color: #f36700;
+}
+
+/* Active menu item pseudo-elements for the arrow indicator */
+.menu-nav li.active:before,
+.menu-nav li.active:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: -19px;
+    border-style: solid;
+    z-index: 1;
+}
+
+/* Active menu item pseudo-element for the left arrow */
+.menu-nav li.active:before {
+    left: 0;
+    border-width: 20px 60px 0 0;
+    border-color: #f36500 transparent transparent;
+}
+
+/* Active menu item pseudo-element for the right arrow */
+.menu-nav li.active:after {
+    right: 0;
+    border-width: 0 60px 20px 0;
+    border-color: transparent #f36500 transparent;
+}
+
+/* Menu content container styles */
+#menu-content {
+    overflow: auto;
+    padding: 30px 2% 30px;
+    background-color: #FFF;
+}
+
+/* Individual dish item styles */
+.single-dish {
+    margin-top: 30px;
+}
+
+/* Menu content row styles */
+#menu-content > .row {
+    padding-top: 10%;
+}
+
+/* Heading styles for individual dish */
+.single-dish .single-dish-heading {
+    position: relative;
+    z-index: 10;
+}
+
+/* Dashed line below dish name */
+.single-dish .single-dish-heading:before {
+    content: "";
+    display: block;
+    position: relative;
+    top: 25px;
+    height: 1px;
+    width: 100%;
+    border-top: 1px dashed #151515;
+    z-index: -1;
+}
+
+/* Dish name styles */
+.single-dish .name {
+    display: inline-block;
+    font-family: 'Cabin', sans-serif;
+    background-color: #FFF;
+    padding-right: 10px;
+    font-weight: 400;
+}
+
+/* Price styles for individual dish */
+.item1, .item2, .item3, .item4, .item5 {
+    padding-bottom: 2%;
+}
+
+/* Menu item image styles */
+.Menu-image > img {
+    padding-left: 15%;
+    width: 75%;
+    height: auto;
+}
+
+/* Section styles */
+.section {
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* Section header title styles */
+.section-header .title {
+    font-family: 'Dancing Script', cursive;
+    margin-top: 0px;
+}
+
+/* Section header subtitle styles */
+.section-header .sub-title {
+    font-weight: 400;
+    color: #f36700;
+}
+
+/*------------------------------------*\
+    Basket
+\*------------------------------------*/
+
+/* Basket container styles */
+.Basket {
+    background-color: white;
+    padding: 50px;
+    position: relative;
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-top: 1px solid #ccc;
+}
+
+/* Remove button styles */
+button.remove {
+    background-color: #ff0000;
+    margin-left: 20px;
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 40px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: 0.2s opacity;
+    transition: 0.2s opacity;
+}
+
+/* Remove button hover styles */
+button:hover {
+    background-color: blue;
+}
+
+/*------------------------------------*\
+	Footer
+\*------------------------------------*/
+
+/* Footer styles */
+footer {
+    background-color: black;
+    color: white;
+    padding-left: 25px;
+}
+
+/* Footer navigation link styles */
+#footer a.nav-link {
+    color: white;
+    text-decoration-line: none;
+    padding: 0%;
+}
+
+/* Footer navigation link hover styles */
+#footer a.nav-link:hover {
+    color: #f37000;
+}
+
+/* Footer title styles */
+.footer-title {
+    color: #f36700;
+}
+
+/*------------------------------------*\
+	Responsive
+\*------------------------------------*/
+
+/* Media query for screens with a max width of 1201px */
+@media only screen and (max-width: 1201px) {
+    /* Hide the contact navigation */
+    .contact-nav {
+        display: none;
+    }
+}
+
+/* Media query for screens with a max width of 991px */
+@media only screen and (max-width: 991px) {
+    /* Display copyright text centered */
+    .copyright {
+        display: block;
+        text-align: center;
+    }
+}
+
+/* Media query for screens with a max width of 767px */
+@media only screen and (max-width: 767px) {
+    /* Display contact navigation */
+    .contact-nav {
+        display: block;
+    }
+	/* Rearrange the first column to appear second */
+    .order-md-1 {
+        order: 2;
+    }
+	/* Rearrange the second column to appear first */
+    .order-md-2 {
+        order: 1;
+    }
+}
+
+/* Media query for screens with a max width of 576px */
+@media (max-width: 576px) {
+    /* Adjust Basket margin for responsiveness */
+    .Basket {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}
+
+/* Media query for screens with a min width of 576px and max width of 720px */
+@media (min-width: 576px) and (max-width: 720px) {
+    /* Adjust Basket margin for responsiveness */
+    .Basket {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
