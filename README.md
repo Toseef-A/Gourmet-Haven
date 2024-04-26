@@ -1,1 +1,11 @@
-This project is about making a website for an owner of a restaurant that wants to expand his business by introducing a website so he could be more reachable. Another reason why he wants to make a website is because he also wants to add an online service for booking a table so it is more automatized so he has more time to attend the customers and to cook for them, he also wants to add a service so customers can order online and make more profit out of it.
+Restaurant Website Project
+
+This project, completed as part of a module assignment for my bachelor's degree at University Academy 92, aims to create a website for a restaurant owner looking to expand their business by establishing an online presence. The primary objectives include:
+
+Increased Reachability: The owner seeks to make the restaurant more accessible to potential customers by introducing a website.
+
+Automated Table Booking: Implementing an online booking system to automate the reservation process, allowing the owner to focus more on customer service and food preparation.
+
+Online Ordering Service: Introducing an online ordering service to enable customers to order food remotely, thereby increasing profitability and convenience for customers.
+
+By addressing these objectives, the project aims to modernize the restaurant's operations and enhance its overall efficiency and customer satisfaction.
